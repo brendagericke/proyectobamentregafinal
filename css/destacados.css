@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*Estilos del Body**/
+
+h1{
+    color:beige;
+    text-align: center;
+    background: rgb(1,1,8);
+    background: linear-gradient(90deg, rgba(1,1,8,1) 0%, rgba(98,16,34,1) 46%, rgba(190,15,66,1) 100%);
+    padding: 2%;
+
+}
+h3{
+    color: rgb(245, 245, 182);
+    text-align: center;
+    background: rgb(190,15,66);
+    background: linear-gradient(90deg, rgba(190,15,66,1) 0%, rgba(65,6,19,1) 46%, rgba(0,0,0,1) 100%);
+    text-align:center;
+}
+
+h1:hover{
+    color:pink;
+}
+
+p{
+    color:blanchedalmond;
+    font-size: small;
+
+}
+
+body {
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+audio{
+    width:20%;
+    margin-left:40%;
+    margin-top:2%;
+    margin-bottom:1%;
+}
+/**Estilos del Footer + clases aplicadas**/
+
+
+.imgLogo{
+    float: left;
+    width: 75px;
+    height:75px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px gray;
+    margin:15px;
+}
+.click {
+    display:flex;
+    justify-content: center;
+    font-size:16px;
+    color:pink;
+    border-radius: 5px;
+    padding-bottom:2%;
+}
+.containerLibros{
+    width:100%;
+    height:50%;
+}
+.flexContainer{
+    display:flex;
+    flex-wrap: nowrap;
+    width:100%;
+    height:50%;
+
+}
+.destacadosTop{
+    width:20%;
+    height:auto;
+    border-radius: 10px;
+    margin-left:4%;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.albumes{
+    width:60%;
+    height:auto;
+    border-radius:10px;
+    margin-left:25%;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+#h3Primero{
+    margin-top: 2%;
+    margin-bottom:1%;
+
+}
+
+
+.footerEstilo {
+    background-color: rgba(98,16,34,1);
+    color:pink;
+    font-size: 13px;
+    border:none;
+    padding:3%;
+}
+.textoFoot{
+    text-align:center;
+}
+.aColor{
+    text-decoration: none;
+    color:pink;
+    margin:5%;
+}
+
+/*Estilos Hover**/
+.albumes:hover{
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    }
+    .destacadosTop:hover{
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+/*js*/
+.imagenDefinida {
+    filter: brightness(150%);
+}
+/*Responsive con MediaQuerys*/
+@media(max-width:1200px){
+    .imgLogo{
+        width:65px;
+        height:auto;
+        margin:10px 2px 5px 30px;
+    }
+    }
+    body{
+        font-size: 80%
+    }
+@media(max-width:600px){
+    footer{
+        font-size:120%
+    }
+}
+@media (max-width:700px){
+    .click {
+        flex-direction:column;
+        margin:auto;
+        padding:2%;
+        font-size:100%;
+        display:flex;
+        align-items:center;
+    }
+    .flexContainer{
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .albumes{
+        width:50%;
+        margin-left:30%;
+    }
+    .destacadosTop{
+        width:30%;
+        margin-left:15%;
+    }
+    header {
+        font-size: 16px;
+    }
+    .h3Primero, h1{
+        padding-right:10%;
+    }
+    
+}
+
+
+
